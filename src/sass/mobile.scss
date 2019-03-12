@@ -1,0 +1,44 @@
+
+.main-title{
+	@include media-breakpoint-down(xl) {
+		font-size: 72px;
+	}
+	@include media-breakpoint-down(lg) {
+		font-size: 48px;
+	}
+	@include media-breakpoint-down(md) {
+		font-size: 42px;
+	}
+	@include media-breakpoint-down(sm) {
+		font-size: 60px;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.hero-homepage{
+		padding: 100px 10px 15px 10px;
+		.container{
+			padding: 0;
+		}
+		.main-title{
+			padding: 0;
+		}
+	}
+	.alisontravel-navbar {
+		position: relative;
+		background: #000;
+		z-index: 999; 
+	}
+}
+@include media-breakpoint-down(sm) {
+	.hero-homepage {
+		padding: 100px 10px 15px 10px;
+		.container {
+			padding: 0;
+		}
+		.main-title {
+			padding: 0;
+		}
+	}
+	
+}
