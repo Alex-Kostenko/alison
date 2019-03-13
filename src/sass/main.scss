@@ -452,12 +452,63 @@ select {
 			font-size: 28px;
 			margin-bottom: 25px;
 		}
+
+		&__nav {
+			padding-top: 0; 
+
+			&-item {
+				font-size: 18px;
+				background-color: transparent; 
+				padding-left: 0;
+				padding-right: 0;
+				color: #000000;
+    			opacity: 0.7;
+    			border: 0;
+
+				&:hover {
+					border: 0;
+				}
+
+				&_last {
+					font-size: 18px;
+					margin-left: 40px;
+					padding-left: 0;
+					padding-right: 0;
+					color: #000000;
+    				opacity: 0.7;
+    				border: 0;
+					&:hover {
+					}
+				}
+			}
+			.active{
+				font-size: 18px;
+				background-color: transparent; 
+    			border:0;
+    			color: #000000;
+    			opacity: 0.7;
+    			border-bottom: 2px solid #000;
+    			display: flex;
+    			justify-content: center;
+    			align-items: center;
+			}
+		}
+
+		&__content{
+			margin-top: 30px;
+			margin-bottom: 30px;
+			font-size: 18px;
+			line-height: 1.83;
+			letter-spacing: -0.5px;
+			color: rgba(0, 0, 0, 0.7);
+		}
 	}
 }
 .tour-form {
 	padding: 30px;
 	background: #fff;
 	border-radius: 5px;
+
 	&__top {
 
 		.top__prise {
@@ -481,10 +532,11 @@ select {
 
 			&-img {
 			position: absolute;
-			margin-left: 22px;
+			margin-left: 35px;
 			margin-top: 20px;
 			z-index: 2;
 			top: 0;
+			left: 0;
 			}
 
 			&-input {
@@ -493,6 +545,7 @@ select {
 				position: relative;
 				height: 60px;
 				padding-left: 55px;
+				width: 100%;
 				max-width: 100%;
 				&_submit {
 					background: linear-gradient(to right, #a21d6e 0%, #e2245e 100%);
@@ -522,7 +575,7 @@ select {
 			margin-bottom: 20px;
 		}
 		&__tel {
-			font-size: 18px;
+			font-size: 17px;
 			opacity: 0.7;
 		}
 	}
