@@ -1,0 +1,74 @@
+.counrty {
+.hero-page {
+	padding: 259px 20px 60px;
+	background: url("../img/bg/country-bg.png") no-repeat 50% 50%;
+	background-size: cover;
+
+	&__title {
+		font-size: 96px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		color: #ffffff;
+		margin-bottom: 43px;
+		font-family: 'Galano';
+	}
+	&__nav {
+		
+		&-item {
+			font-family: 'Helvetica';
+			font-size: 18px;
+		}
+
+		&-link {
+			font-family: 'Helvetica';
+			border: 0;
+			font-weight: 300;
+			&:hover {
+				border-bottom: 3px solid #fff;
+			}
+		}
+
+		.active {
+			background: transparent;
+			color: #fff;
+			border: 0;
+			border-bottom: 3px solid #fff;
+		}
+
+	}
+
+	&__content {
+		margin-top: 30px;
+		border-radius: 10px;
+	    overflow: hidden;
+	}
+
+	&__content-item {
+			height: 60px;
+			width: 100%;
+			padding-left: 45px;
+			background: #fff;
+			color: rgba(0,0,0, 0.7);
+			letter-spacing: -0.5px;
+			
+		&_grey{ 
+			color: rgba(0,0,0, 0.3);
+		 }
+		
+		&_search {
+			height: 60px;
+			width: 100%;
+			padding-left: 0;
+		}
+
+		&_gradient {
+			background: linear-gradient(to right, #a21d6e 0%, #e2245e 100%);
+			color: #fff;
+			width: 170px;
+		}
+
+	}
+
+}
+
+}

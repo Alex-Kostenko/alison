@@ -1,8 +1,13 @@
 @font-face {
-    font-family:HelveticaNeueMedium; 
-    src: url(../fonts/HelveticaNeue-Medium.ttf);
+  font-family: 'Helvetica';
+  src: url('../fonts/HelveticaNeue-Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
 @font-face {
-    font-family:GalanoGrotesqueBold; 
-    src: url(../fonts/Galano-Grotesque-Bold.ttf);
+  font-family: 'Galano';
+  src: url('../fonts/GalanoGrotesqueDEMO-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
