@@ -12,6 +12,7 @@
 		margin-bottom: 43px;
 		font-family: 'Galano';
 	}
+
 	&__nav {
 		
 		&-item {
@@ -23,9 +24,11 @@
 			font-family: 'Helvetica';
 			border: 0;
 			font-weight: 300;
+
 			&:hover {
 				border-bottom: 3px solid #fff;
 			}
+
 		}
 
 		.active {
@@ -51,9 +54,9 @@
 			color: rgba(0,0,0, 0.7);
 			letter-spacing: -0.5px;
 			
-		&_grey{ 
+		&_grey{
 			color: rgba(0,0,0, 0.3);
-		 }
+		}
 		
 		&_search {
 			height: 60px;
