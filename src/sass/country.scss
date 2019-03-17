@@ -202,9 +202,70 @@
 				color: #fff;
 				border-radius: 0 5px 5px 0;
 	  		}
+
   		}
+
   	}
-  	
+  
+}
+
+.country-footer {
+	font-family: 'Helvetica';
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.7);
+
+	.first-col {
+		
+		&__logo{
+			width: 85.6px;
+  			height: 62px;
+  			margin-top: 63px;
+  			margin-bottom: 21px;
+		}
+
+		&__text{
+			
+			line-height: 1.5;
+  			letter-spacing: -0.4px;
+  			margin-bottom: 20px;
+		}
+
+		&__social{
+			margin-bottom: 32px;
+		}
+
+		&__img-azer{
+			width: 69.4px;
+  			height: 41px;
+  			margin-bottom: 38px;
+		}
+
+	}
+
+	.other-col {
+		&__title {
+			margin-top: 83px;
+			margin-bottom: 42px;
+			font-size: 18px;
+		}
+		&__block {
+			margin-bottom: 15px;
+			display: flex;
+			align-items: center;
+
+			&-img {
+				margin-right: 19px;
+				height: 100%;
+				
+			}
+		}
+	}
+}
+.copyright {
+	font-family: 'Helvetica';
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.5);
+	letter-spacing: -0.4px;
 }
 
 
