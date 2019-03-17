@@ -333,7 +333,7 @@ select {
 			background: linear-gradient(to right, #a21d6e 0%, #e2245e 100%);
 			border: 0;
 			color: #fff;
-			border-radius: 0 5px 5px 0; 
+			border-radius: 0 5px 5px 0;
 		}
 
 	}
@@ -482,7 +482,7 @@ select {
 				padding-left: 0;
 				padding-right: 0;
 				color: #000000;
-    			opacity: 0.7;
+    			opacity: 0.3;
     			border: 0;
 
 				&:hover {
@@ -495,8 +495,9 @@ select {
 					padding-left: 0;
 					padding-right: 0;
 					color: #000000;
-    				opacity: 0.7;
+    				opacity: 0.3;
     				border: 0;
+
 					&:hover {
 					}
 				}
@@ -533,6 +534,7 @@ select {
 
 		.top__prise {
 			font-size: 35px;
+			margin-bottom: 11px;
 
 			&_span {
 				font-size: 14px;
@@ -546,9 +548,12 @@ select {
 	}
 
 	.main-form{
+		font-family: 'Helvetica';
+		color: #DBDBDB;
+
 		&__item {
 			height: 60px;
-			margin-bottom: 20px;
+			margin-bottom: 25px;
 
 			&-img {
 			position: absolute;
@@ -567,10 +572,18 @@ select {
 				padding-left: 55px;
 				width: 100%;
 				max-width: 100%;
+				color: #DBDBDB;
+				background: #fff;
+
+				&::placeholder{
+					color: #DBDBDB;
+				}
+
 				&_submit {
 					background: linear-gradient(to right, #a21d6e 0%, #e2245e 100%);
 					border: 0;
 					color: #fff;
+					margin-top: 0;
 				}
 			}
 
@@ -599,6 +612,15 @@ select {
 			opacity: 0.7;
 		}
 	}
+}
+.margin-10 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.margin-30 {
+	margin-left: -30px;
+	margin-right: -30px;
 }
 
 
