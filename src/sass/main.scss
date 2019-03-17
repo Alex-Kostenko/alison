@@ -394,17 +394,22 @@ select {
 	height: 620px;
 }
 
-.tour-breadcrumb{
+.tour-breadcrumb {
 	background: #fafafa;
+	margin-top: 60px;
 	
-	&__item{
-		
-		& + &::before{
+	&__item {
+
+		& + &::before {
 		content: ">" ;
 		}
-		 
-		&_link{
+		
+		&_link {
 			color: rgba(0,0,0, 0.5);
+
+			&:hover {
+				color: rgba(0,0,0, 1);
+			}
 		}
 	}
 }
