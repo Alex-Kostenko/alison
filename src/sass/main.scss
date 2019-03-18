@@ -35,9 +35,9 @@ select {
 }
 
 .navbar-logo {
-  	width: 85px;  
-  	height: 62px;
-  	margin-right: 51px;
+	width: 85px;  
+	height: 62px;
+	margin-right: 51px;
 }
 
 .nav-light{
@@ -85,7 +85,7 @@ select {
 .tab-content__spase {
 	margin-top: 30px;
 	border-radius: 10px;
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .tab-item {
@@ -119,6 +119,7 @@ select {
 	}
 
 }
+
 .travel-holidays{
 
 	&__title {
@@ -127,10 +128,37 @@ select {
 	}
 
 	&__item {
-		
-		&-img {
-			object-fit: cover;
+		margin-bottom: 30px;
+
+		@include media-breakpoint-down(sm) {
+			height: calc(48vw - 30px);
+
 		}
+
+		@include media-breakpoint-up(sm) {
+			height: 250px;
+		}
+
+		@include media-breakpoint-up(md) {
+			height: 304px;
+		}
+
+		@include media-breakpoint-up(lx) {
+			height: 350px;
+		}
+
+		&_wide-on-mobile {
+			@include media-breakpoint-down(sm) {
+				height: calc(53.33vw - 30px);
+			}
+		}
+
+		&-img {
+			height: 100%;
+			object-fit: cover;
+			border-radius: 5px;
+		}
+
 		&-title {
 			position: absolute;
 			z-index: 2;
@@ -140,8 +168,12 @@ select {
 			justify-content: center;
 			align-items: center;
 			top:0;
+			left: 0;
 			color: #fff;
 			text-shadow: 0 0 10px rgba(0,0,0,0.5);
+			@include media-breakpoint-down(sm) {
+				font-size: 7vw;
+			}
 		}
 	}
 }
@@ -188,7 +220,7 @@ select {
 				height: auto;
 				margin-top: 20px;
 				margin-bottom: 23px; 
-			}	
+			}
 		}
 
 		&-name {
@@ -201,14 +233,14 @@ select {
 
 		&-comment {
 			line-height: 1.56;
-  			letter-spacing: 0.2px;
+			letter-spacing: 0.2px;
 			color: #000000;
 			font-size: 16px;
 			text-align: center;
 
 			&_main{
 				line-height: 1.56;
-  				letter-spacing: 0.2px;
+				letter-spacing: 0.2px;
 				color: #000000;
 				font-size: 16px;
 				margin-bottom: 14px;
@@ -218,19 +250,19 @@ select {
 	}
 
 	.circle {
-    background-color:#cccdce;   
-    height:10px;
-    width:10px;
-    border-radius:50%;
-    margin: 30px 5px 0px;
+		background-color:#cccdce;
+		height:10px;
+		width:10px;
+		border-radius:50%;
+		margin: 30px 5px 0px;
 
-	    &_active {
-	    	background-color:#D92360;   
+		&_active {
+			background-color:#D92360;
 			height:15px;
-	   	 	width:15px;
-	   		border-radius:50%;
-	    	position: absolute;
-	    }
+			width:15px;
+			border-radius:50%;
+			position: absolute;
+		}
 	}
 }
 
@@ -297,6 +329,7 @@ select {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 78px;
+
 	&__title {
 		font-size: 40px;
 		line-height: 1.33;
@@ -304,6 +337,7 @@ select {
 		text-align: center;
 		margin-bottom: 40px;
 	}
+
 	&__form {
 		text-align: center;
 		width: 100%;
@@ -342,16 +376,16 @@ select {
 	.first-col {
 		&__logo{
 			width: 85.6px;
-  			height: 62px;
-  			margin-top: 63px;
-  			margin-bottom: 21px;
+			height: 62px;
+			margin-top: 63px;
+			margin-bottom: 21px;
 		}
 
 		&__text{
 			font-size: 14px;
 			line-height: 1.5;
-  			letter-spacing: -0.4px;
-  			margin-bottom: 20px;
+			letter-spacing: -0.4px;
+			margin-bottom: 20px;
 		}
 
 		&__social{
@@ -434,8 +468,8 @@ select {
 		font-size: 18px;
 		color: #4A4A4A;
 		line-height: 1.83;
-  		letter-spacing: -0.5px;
-  		margin-bottom: 40px;
+		letter-spacing: -0.5px;
+		margin-bottom: 40px;
 	}
 
 	&__info {
@@ -495,8 +529,8 @@ select {
 					padding-left: 0;
 					padding-right: 0;
 					color: #000000;
-    				opacity: 0.3;
-    				border: 0;
+					opacity: 0.3;
+					border: 0;
 
 					&:hover {
 					}
@@ -505,13 +539,13 @@ select {
 			.active{
 				font-size: 18px;
 				background-color: transparent; 
-    			border:0;
-    			color: #000000;
-    			opacity: 0.7;
-    			border-bottom: 2px solid #000;
-    			display: flex;
-    			justify-content: center;
-    			align-items: center;
+				border:0;
+				color: #000000;
+				opacity: 0.7;
+				border-bottom: 2px solid #000;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 		}
 
