@@ -313,10 +313,11 @@ select {
 			align-items: center;
 			font-size: 50px;
 			color: #ffffff;
+			// transition: color 800ms;
 
 			&:hover {
 			background: rgba(0, 170, 0, 0);
-
+			color: transparent;
 			}
 
 		}
