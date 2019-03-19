@@ -60,7 +60,6 @@
 		margin-right: 10px;
 	}
 	.hero-page {
-
 		&__nav {
 			border: 0;
 			display: flex;
@@ -84,17 +83,62 @@
 				}
 			}
 			.active {
-				background: linear-gradient(to right, #a21d6e 0%, #e2245e 100%);
 				border-bottom: 0 ;
 				border-radius: 5px ;
 				color: #fff;
+				background-position: 50% 50%;
+				background-repeat: no-repeat;
+			}
+			
+
+			&-item_tours {
+				background-image: url('../img/icons/Tours.svg');
+				position: relative;
+				z-index: 100;
+			}
+			&-item_tours.active {
+				background-image: url('../img/icons/Tours_act.svg'), linear-gradient(to right, #a21d6e 0%, #e2245e 100%) !important;
+			}
+
+
+			&-item_hotels {
+				background-image: url('../img/icons/Tours.svg');
+			}
+			&-item_hotels.active {
+				background-image: url('../img/icons/Hotels.svg'), linear-gradient(to right, #a21d6e 0%, #e2245e 100%) !important;
+			}
+
+
+			&-item_flights {
+				background-image: url('../img/icons/Tours.svg');
+			}
+			&-item_flights.active {
+				background-image: url('../img/icons/Flights.svg'), linear-gradient(to right, #a21d6e 0%, #e2245e 100%) !important;
+			}
+
+
+			&-item_transfers {
+				background-image: url('../img/icons/Tours.svg');
+			}
+			&-item_transfers.active {
+				background-image: url('../img/icons/Transfers.svg'), linear-gradient(to right, #a21d6e 0%, #e2245e 100%) !important;
+			}
+
 			}
 
 		}
 
 	}
 
-}
+	.hero-page__nav {
+		.tours {
+			.active {
+				
+			}
+		}
+	}
+
+
 .tab-item {
 	margin-bottom: 15px;
 	border-radius: 15px;
