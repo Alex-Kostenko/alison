@@ -80,13 +80,13 @@
 				padding: 0rem 1rem;
 
 				&:hover {
-					border-bottom: 0 !important;
+					border-bottom: 0;
 				}
 			}
 			.active {
-				background: linear-gradient(to right, #a21d6e 0%, #e2245e 100%) !important;
-				border-bottom: 0 !important;
-				border-radius: 5px !important;
+				background: linear-gradient(to right, #a21d6e 0%, #e2245e 100%);
+				border-bottom: 0 ;
+				border-radius: 5px ;
 				color: #fff;
 			}
 
@@ -99,8 +99,8 @@
 	margin-bottom: 15px;
 	border-radius: 15px;
 	&_size {
-		border: solid 1px rgba(0, 0, 0, 0.1)!important;
-		border-radius: 15px !important;
+		border: solid 1px rgba(0, 0, 0, 0.1);
+		border-radius: 15px ;
 
 		&_grey {
 			color: rgba(0,0,0, 0.3);
@@ -108,7 +108,7 @@
 	}
 	
 	&_size-search {
-		border-radius: 15px !important;
+		border-radius: 15px ;
 	}
 
 	&_gradient {
@@ -119,5 +119,10 @@
 		
 	}
 
+}
+.travel-holidays__title{
+	font-size: 24px;
+	text-align: left;
+	margin-bottom: 25px;
 }
 }

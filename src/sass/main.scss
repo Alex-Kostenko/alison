@@ -98,6 +98,8 @@ select {
 		background: #fff;
 		color: rgba(0,0,0, 0.7);
 		letter-spacing: -0.5px;
+		border-radius: 0;
+		border: 0;
 		&_grey{ 
 			color: rgba(0,0,0, 0.3);
 		 }
@@ -443,7 +445,7 @@ select {
 		font-size: 16px;
 
 		& + &::before {
-		content: ">" ;
+		content: ">";
 		}
 		
 		&_link {
