@@ -32,10 +32,30 @@
 		}
 	}
 	.alisontravel-navbar {
-		position: relative;
-		background: #000;
-		z-index: 999; 
+		background: linear-gradient(to right, #a21d6e 0%, #e2245e 100%);
+		z-index: 5; 
+		position: absolute;
+	    width: 100%;
+	    padding-top: 88px;
 	}
+	.travel-holidays__title {
+	font-size: 24px;
+	text-align: left;
+	margin-bottom: 25px;
+}
+
+.alisontravel-nav .nav-item {
+	border-top: 1px solid  rgba(255,255,255, 0.3) ;
+	padding: 22px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.alisontravel-nav .alisontravel-link{
+	
+	padding-right: 0;
+	text-align: center;
+}
 
 }
 @include media-breakpoint-down(sm) {
@@ -72,11 +92,14 @@
 				border-radius: 5px;
 				box-shadow: 0 0 10px rgba(0,0,0,0.2);
 				font-size: 14px;
+
+
 			}
 
 			&-link {
 
 				padding: 0rem 1rem;
+				padding-top: 39px;
 
 				&:hover {
 					border-bottom: 0;
@@ -93,51 +116,57 @@
 
 			&-item_tours {
 				background-image: url('../img/icons/Tours.svg');
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-position-y: 15px;
 				position: relative;
-				z-index: 100;
-			}
-			&-item_tours.active {
-				background-image: url('../img/icons/Tours_act.svg'), linear-gradient(to right, #a21d6e 0%, #e2245e 100%) !important;
 			}
 
+			&-item_tours.active {
+				background-image: url('../img/icons/Tours_act.svg'), linear-gradient(to right, #a21d6e 0%, #e2245e 100%);
+				background-position-y: 15px , 0;
+			}
 
 			&-item_hotels {
-				background-image: url('../img/icons/Tours.svg');
-			}
-			&-item_hotels.active {
-				background-image: url('../img/icons/Hotels.svg'), linear-gradient(to right, #a21d6e 0%, #e2245e 100%) !important;
+				background-image: url('../img/icons/Hotels.svg');
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-position-y: 15px , 0;
 			}
 
+			&-item_hotels.active {
+				background-image: url('../img/icons/Hotels_act.svg'), linear-gradient(to right, #a21d6e 0%, #e2245e 100%);
+				background-position-y: 15px , 0;
+			}
 
 			&-item_flights {
-				background-image: url('../img/icons/Tours.svg');
+				background-image: url('../img/icons/Flights.svg');
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-position-y: 15px , 0;
 			}
 			&-item_flights.active {
-				background-image: url('../img/icons/Flights.svg'), linear-gradient(to right, #a21d6e 0%, #e2245e 100%) !important;
+				background-image: url('../img/icons/Flights_act.svg'), linear-gradient(to right, #a21d6e 0%, #e2245e 100%);
+				background-position-y: 15px , 0;
 			}
-
 
 			&-item_transfers {
-				background-image: url('../img/icons/Tours.svg');
+				background-image: url('../img/icons/Transfers.svg');
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-position-y: 15px , 0;
 			}
+
 			&-item_transfers.active {
-				background-image: url('../img/icons/Transfers.svg'), linear-gradient(to right, #a21d6e 0%, #e2245e 100%) !important;
-			}
-
+				background-image: url('../img/icons/Transfers_act.svg'), linear-gradient(to right, #a21d6e 0%, #e2245e 100%);
+				background-position-y: 15px , 0;
 			}
 
 		}
 
 	}
 
-	.hero-page__nav {
-		.tours {
-			.active {
-				
-			}
-		}
-	}
-
+}
 
 .tab-item {
 	margin-bottom: 15px;
@@ -150,23 +179,10 @@
 			color: rgba(0,0,0, 0.3);
 		}
 	}
-	
+
 	&_size-search {
 		border-radius: 15px ;
 	}
-
-	&_gradient {
-		
-	}
-
-	.mb-0 {
-		
-	}
-
 }
-.travel-holidays__title{
-	font-size: 24px;
-	text-align: left;
-	margin-bottom: 25px;
-}
+
 }
